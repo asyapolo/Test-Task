@@ -20,7 +20,7 @@ redmi note 12,xiaomi,199,4.6
 Чтобы добавить новый отчёт:
 
 1. В файле reports.py создать новую функцию.
-Например, отчёт со средней ценой:
+Например, отчёт средней цены:
 ```
  def average_price_report(rows):
     sums = {}
@@ -41,12 +41,12 @@ redmi note 12,xiaomi,199,4.6
     table_rows = [[brand, avg] for brand, avg in result]
     return headers, table_rows
 ```
-2. Cоздать новый отчёт в словаре REPORTS
+2. Cоздать новый отчёт в словаре REPORTS:
 
 ```
 REPORTS["average-price"] = average_price_report
 ```
-3. Запустить в консоли
+3. Запустить в консоли:
 
 ```
 python main.py --files data/brands.csv --report average-price
