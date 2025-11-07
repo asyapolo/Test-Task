@@ -4,7 +4,7 @@ import sys
 from tabulate import tabulate
 
 from reader import read_products
-from reports import REPORTS
+from mane_reports import REPORTS
 
 
 def parse_args(argv=None):
